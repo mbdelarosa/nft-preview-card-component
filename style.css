@@ -88,3 +88,27 @@ body {
 .nft-creator__name {
   color: var(--white);
 }
+
+@media only screen and (min-width: 20rem) {
+  .nft-card-component {
+    max-width: 22rem;
+    gap: 0.9rem;
+  }
+
+  .nft-card__title {
+    font-size: 1.4rem;
+  }
+
+  .nft-card__description {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nft-card__details {
+    margin-bottom: 0.5rem;
+  }
+
+  .line {
+    margin-bottom: 0.25rem;
+  }
+}
