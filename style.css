@@ -39,6 +39,9 @@ body {
 }
 
 .nft-image-container {
+  border: none;
+  padding: 0;
+  background: none;
   display: block;
   position: relative;
   margin-bottom: 0.5rem;
@@ -50,6 +53,8 @@ body {
   height: 100%;
   opacity: 0;
   content: "";
+  left: 0;
+  top: 0;
   transition: 0.5s;
 }
 
@@ -60,6 +65,7 @@ body {
 
 .nft-image-container:hover::before, .nft-image-container:focus-visible::before {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .nft-image-container::after {
@@ -67,12 +73,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-  left: 0;
-  top: 0;
 }
 
 .nft-image-container:hover::after, .nft-image-container:focus-visible::after {
   opacity: 1;
+  cursor: pointer;
 }
 
 .nft-card__image {
